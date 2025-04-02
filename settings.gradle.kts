@@ -20,6 +20,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Lecture Plugin Convention"
+// enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS") // включает такой синтаксис implementation(projects.feature.dashboard)
 include(":app")
 include(":domain")
 include(":data")
