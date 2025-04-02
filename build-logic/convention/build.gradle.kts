@@ -32,5 +32,13 @@ gradlePlugin {
             id = "myplugin.android.library" // айди плагина, который можно подключить как id("myplugin.android.library")
             implementationClass = "AndroidLibraryConventionPlugin" // путь к классу
         }
+        register("androidApplication") {
+            id = "myplugin.android.application"
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+        register("jvmLibrary") {
+            id = "myplugin.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
